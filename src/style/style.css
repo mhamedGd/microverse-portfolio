@@ -1,0 +1,236 @@
+*::before * *::after{
+  box-sizing: border-box;
+}
+
+
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0;
+  padding-bottom: 400vh;
+  background-color: #1C1A19;
+  font-family: "Roboto", sans-serif;
+}
+
+/*------------ Contents --------------*/
+
+/*
+-------------------------
+          Menu
+-------------------------
+*/
+
+/*
+-------------------------
+  Link elements in menu
+-------------------------
+*/
+
+/*
+-------------------------
+       Background
+-------------------------
+*/
+
+/*
+-------------------------
+          Links
+-------------------------
+*/
+
+/*
+-------------------------
+      Headline Text
+-------------------------
+*/
+
+/*
+-------------------------
+    Phone Media Query
+-------------------------
+*/
+
+/*-----------------------------------*/
+
+header{
+  height: 62px;  
+  padding: 0 154px;
+  background-color: #3C3A39;
+  color: white;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+---------------------------
+Nav Bar Related
+---------------------------
+*/
+
+header a{
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+header a:hover{
+  color: #FF6B00;
+}
+
+
+#logo{
+  display: flex;
+}
+
+#logo a{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+header ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+header li{
+  display: inline;
+  padding: 0px 5px 0px 5px;
+  margin-right: 32px;
+}
+
+
+#menu-icon{
+  display: none;
+}
+
+/*
+---------------------------
+*/
+
+#headline{
+  
+  /*
+  ---------------------------
+  Background Related
+  ---------------------------
+  */
+  background-image: url("../../rsc/images/Illustration-header.png");
+  height: 640px;
+  width: 100vw;
+  background-repeat:no-repeat;
+  background-position: right;
+  background-clip: border-box;
+  background-attachment:unset;
+  background-size: 500px;
+  /*
+  ---------------------------
+  */
+
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;  
+}
+
+#headline ul{
+  list-style: none;
+  margin-left: -10px;
+}
+
+#headline li{
+  padding: 5px;  
+}
+#headline img{
+  filter: brightness(0) invert(1);
+  height: 20px;
+}
+
+#headline-content{
+  margin-left: 50px;
+}
+
+#headline-content *{
+  margin-bottom: -15px;
+}
+
+#headline-content h1{
+  font-size: 75px;
+  color: #FF6B00;
+  font-family: 'Crete Round', serif;
+}
+
+#headline-content h2{
+  font-size: 32px;
+}
+
+#headline-content p{
+  font-size: 20px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 600px){
+  header{
+    padding: 0 24px;
+  }
+  
+  header nav{
+    display: none;
+  }
+
+  #menu-icon{
+    display: block;
+  }
+
+  #headline{
+    background-position: right -135px bottom -60px;
+    background-attachment:local;
+    background-size: 300px;
+
+    height: 590px;
+
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #headline ul{
+    margin-top: 35px;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  #headline li{
+    display: inline;
+  }
+
+  #headline-content{
+    margin-left: 25px;
+  }
+
+  #headline-content h1{
+    width: 350px;
+    font-size: 40px;
+  }
+
+  #headline-content h2{
+    font-size: 24px;
+  }
+
+  #headline-content p{
+    font-size: 16px;
+    width: 300px;
+  }
+}
