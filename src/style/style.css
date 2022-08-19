@@ -18,30 +18,6 @@ body p {
   font-weight: 400;
 }
 
-/* ------------ Contents --------------
-
--------------------------
-  Link elements in menu
--------------------------
-
--------------------------
-       Background
--------------------------
-
--------------------------
-          Links
--------------------------
-
--------------------------
-      Headline Text
--------------------------
-
--------------------------
-    Phone Media Query
--------------------------
-
------------------------------------ */
-
 header {
   height: 62px;
   padding: 0 154px;
@@ -50,6 +26,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /*
@@ -65,6 +46,19 @@ header a {
   text-decoration: none;
   color: white;
   transition: 0.2s;
+}
+
+.project-mobile-template a {
+  text-align: center;
+  color: white;
+  width: 100px;
+  line-height: 55px;
+  text-decoration: none;
+  padding-left: 120px;
+  padding-right: 120px;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 header a:hover {
@@ -99,67 +93,143 @@ header li {
 ---------------------------
 */
 
-#headline {
-  /*
-  ---------------------------
-  Background Related
-  ---------------------------
-  */
-  background-image: url("../../rsc/images/Illustration-header.png");
-  height: 640px;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-clip: border-box;
-  background-attachment: unset;
-  background-size: 500px;
-
-  /*
-  ---------------------------
-  */
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+#about {
+  width: 700px;
+  margin-left: 165px;
+  height: 540px;
   gap: 20px;
 }
 
-#headline ul {
-  list-style: none;
-  margin-left: -10px;
-}
-
-#headline li {
-  padding: 5px;
-}
-
-#headline img {
-  filter: brightness(0) invert(1);
-  height: 20px;
-}
-
-#headline-content {
-  margin-left: 50px;
-}
-
-#headline-content * {
-  margin-bottom: -15px;
-}
-
-#headline-content h1 {
-  font-size: 75px;
-  color: #ff6b00;
+#about h2 {
+  margin-top: 130px;
+  font-size: 72px;
   font-family: 'Crete Round', serif;
+  font-weight: 400;
+  color: #ff6b00;
 }
 
-#headline-content h2 {
+.project-template p {
+  margin-top: -20px;
+  font-weight: 300;
+}
+
+.project-mobile-template p {
+  margin-top: -20px;
+  width: 295px;
+}
+
+#about p {
+  width: 566px;
+  margin: -50px 0 50px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#about a {
+  padding: 12px 10px;
+  background-color: #f55800;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+#skills {
+  height: 1195px;
+  width: calc(100% + 15px);
+  background-image: url("../../rsc/images/illustration-about.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 750px;
+  color: white;
+}
+
+#project-main a {
+  padding: 15px;
+  background-color: #f55800;
+  color: white;
+  text-decoration: none;
+}
+
+#projects a {
+  transition: 0.4s;
+}
+
+#project-mobile-main a {
+  padding: 15px;
+  background-color: #f55800;
+  color: white;
+  text-decoration: none;
+}
+
+#skills a {
+  transition: 0.4s;
+}
+
+#projects a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#project-mobile-main a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#skills a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#skills hr {
+  width: 1156px;
+  border: none;
+  border-top: 1px solid white;
+}
+
+#skill-list {
+  width: 1200px;
+  margin: 100px 0 0 170px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.333fr 0.333fr 0.333fr;
+  font-family: 'Inter', sans-serif;
+}
+
+#skill-list h2 {
+  font-weight: 700;
   font-size: 32px;
 }
 
-#headline-content p {
-  font-size: 20px;
-  width: 400px;
+#skill-list img {
+  margin: 0 10px 2px 0;
+}
+
+#skill-list ul {
+  font-weight: 400;
+  font-size: 22px;
+  list-style: none;
+}
+
+.project-mobile-template li {
+  display: inline;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.project-template li {
+  display: inline;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+#skill-list li {
+  margin-bottom: 40px;
 }
 
 #projects {
@@ -200,7 +270,7 @@ header li {
 
 #project-main {
   grid-column: 1 / -1;
-  display: flex;  
+  display: flex;
   align-content: center;
 }
 
@@ -215,6 +285,10 @@ header li {
   text-align: left;
 }
 
+.project-template * {
+  padding: 0 15px 10px 15px;
+}
+
 #project-main p {
   width: 448px;
 }
@@ -225,16 +299,13 @@ header li {
   border: 1.5px solid #8993a4;
 }
 
-#see-project {
+.see-project {
   height: 10px;
   margin-top: 20px;
 }
 
-#project-main a {
-  padding: 15px;
-  background-color: #f55800;
-  color: white;
-  text-decoration: none;
+.project-mobile-template * {
+  padding: 0 15px 10px 15px;
 }
 
 #project-main * {
@@ -251,25 +322,10 @@ header li {
   color: white;
 }
 
-.project-template * {
-  padding: 0 15px 10px 15px;
-}
-
 .project-template h3 {
   font-size: 32px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
-}
-
-.project-template p {
-  margin-top: -20px;
-  font-weight: 300;
-}
-
-.project-template li {
-  display: inline;
-  padding: 10px 12px;
-  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .project-1 {
@@ -294,7 +350,7 @@ header li {
 
 .project-2 {
   grid-column: 2 / 3;
-  background-image: url("../../rsc/images/Img-Placeholder_01.png")
+  background-image: url("../../rsc/images/Img-Placeholder_01.png");
 }
 
 .project-3 {
@@ -363,13 +419,6 @@ header li {
   border: 1px solid #8993a4;
 }
 
-#project-mobile-main a {
-  padding: 15px;
-  background-color: #f55800;
-  color: white;
-  text-decoration: none;
-}
-
 .project-mobile-template {
   background-image: url("../../rsc/images/Img-Placeholder_03.png");
   background-size: cover;
@@ -381,26 +430,11 @@ header li {
   color: white;
 }
 
-.project-mobile-template * {
-  padding: 0 15px 10px 15px;
-}
-
 .project-mobile-template h3 {
   margin-bottom: 20px;
   font-size: 32px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
-}
-
-.project-mobile-template p {
-  margin-top: -20px;
-  width: 295px;
-}
-
-.project-mobile-template li {
-  display: inline;
-  padding: 10px 12px;
-  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .project-mobile-template div {
@@ -415,17 +449,67 @@ header li {
   justify-content: center;
 }
 
-.project-mobile-template a {
-  text-align: center;
+#headline {
+  /*
+  ---------------------------
+  Background Related
+  ---------------------------
+  */
+  background-image: url("../../rsc/images/Illustration-header.png");
+  height: 640px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-clip: border-box;
+  background-attachment: unset;
+  background-size: 500px;
+
+  /*
+  ---------------------------
+  */
   color: white;
-  width: 100px;
-  line-height: 55px;
-  text-decoration: none;
-  padding-left: 120px;
-  padding-right: 120px;
-  font-size: 17px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+#headline ul {
+  list-style: none;
+  margin-left: -10px;
+}
+
+#headline li {
+  padding: 5px;
+}
+
+#headline img {
+  filter: brightness(0) invert(1);
+  height: 20px;
+}
+
+#headline-content {
+  margin-left: 50px;
+}
+
+#headline-content * {
+  margin-bottom: -15px;
+}
+
+#headline-content h1 {
+  font-size: 75px;
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+}
+
+#headline-content h2 {
+  font-size: 32px;
+}
+
+#headline-content p {
+  font-size: 20px;
+  width: 400px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -487,10 +571,62 @@ header li {
 
   #projects-mobile {
     display: grid;
-    grid-template-columns: .8fr;
+    grid-template-columns: 0.8fr;
     width: 99vw;
     justify-content: center;
     grid-row-gap: 80px;
     padding-top: 40px;
+  }
+
+  #skills {
+    height: 1901px;
+    width: calc(100% + 5px);
+    background-image: url("../../rsc/images/illustration-about.png");
+    background-repeat: no-repeat;
+    background-position: right -180px top 340px;
+    background-attachment: local;
+    background-size: 300px;
+    color: white;
+  }
+
+  #about {
+    width: 80%;
+    margin-left: 50px;
+    height: 540px;
+    gap: 20px;
+  }
+
+  #about h2 {
+    margin-top: 130px;
+    font-size: 72px;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    color: #ff6b00;
+  }
+
+  #about p {
+    width: 372px;
+    margin: -50px 0 50px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #skills hr {
+    width: 372px;
+    border: none;
+    border-top: 1px solid white;
+  }
+
+  #skill-list {
+    width: 400px;
+    margin: 40px 0 0 0;
+    grid-template-columns: 0.8fr;
+  }
+
+  #skill-list ul {
+    text-align: center;
+    margin-top: -10px;
   }
 }
