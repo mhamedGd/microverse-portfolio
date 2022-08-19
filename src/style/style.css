@@ -51,18 +51,31 @@ header a {
 .project-mobile-template a {
   text-align: center;
   color: white;
-  width: 100px;
-  line-height: 55px;
+  background: #f55800;
+  height: 48px;
+  line-height: 50px;
   text-decoration: none;
-  padding-left: 120px;
-  padding-right: 120px;
   font-size: 17px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  transition: 0.4s;
+}
+
+.project-1 a {
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 60px;
 }
 
 header a:hover {
   color: #ff6b00;
+}
+
+.project-1 a:hover {
+  border: none;
+  color: white;
 }
 
 #logo {
@@ -165,7 +178,7 @@ header li {
   transition: 0.4s;
 }
 
-#projects a:hover {
+#project-main a:hover {
   transition: 0.4s;
   border: 2px solid #f55800;
   background: none;
@@ -337,15 +350,12 @@ header li {
 .project-1 div {
   background-color: #f55800;
   align-self: center;
+  display: flex;
+  align-items: center;
   margin-bottom: -2px;
   height: calc(15% + 2px);
   width: calc(100% + 2px);
   padding: 0;
-}
-
-.project-1 h4 {
-  font-size: 17px;
-  text-align: center;
 }
 
 .project-2 {
@@ -395,8 +405,8 @@ header li {
 }
 
 #project-mobile-main img {
-  height: 297px;
-  width: 387px;
+  height: 237px;
+  width: 327px;
 }
 
 #project-mobile-main h2 {
@@ -423,6 +433,8 @@ header li {
   background-image: url("../../rsc/images/Img-Placeholder_03.png");
   background-size: cover;
   height: 386px;
+  width: 327px;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -572,7 +584,7 @@ header li {
   #projects-mobile {
     display: grid;
     grid-template-columns: 0.8fr;
-    width: 99vw;
+    width: 100%;
     justify-content: center;
     grid-row-gap: 80px;
     padding-top: 40px;
@@ -580,7 +592,7 @@ header li {
 
   #skills {
     height: 1901px;
-    width: calc(100% + 5px);
+    width: 100%;
     background-image: url("../../rsc/images/illustration-about.png");
     background-repeat: no-repeat;
     background-position: right -180px top 340px;
@@ -591,7 +603,7 @@ header li {
 
   #about {
     width: 80%;
-    margin-left: 50px;
+    margin-left: 30px;
     height: 540px;
     gap: 20px;
   }
@@ -605,7 +617,7 @@ header li {
   }
 
   #about p {
-    width: 372px;
+    width: 332px;
     margin: -50px 0 50px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -614,14 +626,15 @@ header li {
   }
 
   #skills hr {
-    width: 372px;
+    width: 332px;
+    margin-left: 30px;
     border: none;
     border-top: 1px solid white;
   }
 
   #skill-list {
-    width: 400px;
-    margin: 40px 0 0 0;
+    width: 300px;
+    margin: 40px 0 0 15px;
     grid-template-columns: 0.8fr;
   }
 
