@@ -9,34 +9,14 @@ html {
 
 body {
   margin: 0;
-  padding-bottom: 400vh;
   background-color: #1c1a19;
   font-family: "Roboto", sans-serif;
 }
 
-/* ------------ Contents --------------
-
--------------------------
-  Link elements in menu
--------------------------
-
--------------------------
-       Background
--------------------------
-
--------------------------
-          Links
--------------------------
-
--------------------------
-      Headline Text
--------------------------
-
--------------------------
-    Phone Media Query
--------------------------
-
------------------------------------ */
+body p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
 
 header {
   height: 62px;
@@ -46,6 +26,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /*
@@ -63,8 +48,34 @@ header a {
   transition: 0.2s;
 }
 
+.project-mobile-template a {
+  text-align: center;
+  color: white;
+  background: #f55800;
+  height: 48px;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.project-1 a {
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 60px;
+}
+
 header a:hover {
   color: #ff6b00;
+}
+
+.project-1 a:hover {
+  border: none;
+  color: white;
 }
 
 #logo {
@@ -94,6 +105,361 @@ header li {
 /*
 ---------------------------
 */
+
+#about {
+  width: 700px;
+  margin-left: 165px;
+  height: 540px;
+  gap: 20px;
+}
+
+#about h2 {
+  margin-top: 130px;
+  font-size: 72px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  color: #ff6b00;
+}
+
+.project-template p {
+  margin-top: -20px;
+  font-weight: 300;
+}
+
+.project-mobile-template p {
+  margin-top: -20px;
+  width: 295px;
+}
+
+#about p {
+  width: 566px;
+  margin: -50px 0 50px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#about a {
+  padding: 12px 10px;
+  background-color: #f55800;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+#skills {
+  height: 1195px;
+  width: calc(100% + 15px);
+  background-image: url("../../rsc/images/illustration-about.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 750px;
+  color: white;
+}
+
+#project-main a {
+  padding: 15px;
+  background-color: #f55800;
+  color: white;
+  text-decoration: none;
+}
+
+#projects a {
+  transition: 0.4s;
+}
+
+#project-mobile-main a {
+  padding: 15px;
+  background-color: #f55800;
+  color: white;
+  text-decoration: none;
+}
+
+#skills a {
+  transition: 0.4s;
+}
+
+#project-main a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#project-mobile-main a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#skills a:hover {
+  transition: 0.4s;
+  border: 2px solid #f55800;
+  background: none;
+  color: #f55800;
+}
+
+#skills hr {
+  width: 1156px;
+  border: none;
+  border-top: 1px solid white;
+}
+
+#skill-list {
+  width: 1200px;
+  margin: 100px 0 0 170px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.333fr 0.333fr 0.333fr;
+  font-family: 'Inter', sans-serif;
+}
+
+#skill-list h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#skill-list img {
+  margin: 0 10px 2px 0;
+}
+
+#skill-list ul {
+  font-weight: 400;
+  font-size: 22px;
+  list-style: none;
+}
+
+.project-mobile-template li {
+  display: inline;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.project-template li {
+  display: inline;
+  padding: 10px 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+#skill-list li {
+  margin-bottom: 40px;
+}
+
+#projects {
+  background-color: white;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr;
+  grid-template-rows: auto 448px;
+  grid-row-gap: 50px;
+  grid-column-gap: 40px;
+}
+
+#projects h2 {
+  text-align: center;
+  padding: 0 30px 10px 10px;
+  font-size: 40px;
+  font-family: 'Crete Round', serif;
+}
+
+#projects-title {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 3;
+  padding: 135px 0 114px 0;
+}
+
+#projects-title hr {
+  flex-grow: 1;
+  margin-top: 60px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+#project-main {
+  grid-column: 1 / -1;
+  display: flex;
+  align-content: center;
+}
+
+#content-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#project-main h2 {
+  text-align: left;
+}
+
+.project-template * {
+  padding: 0 15px 10px 15px;
+}
+
+#project-main p {
+  width: 448px;
+}
+
+#project-main li {
+  display: inline;
+  padding: 10px 12px;
+  border: 1.5px solid #8993a4;
+}
+
+.see-project {
+  height: 10px;
+  margin-top: 20px;
+}
+
+.project-mobile-template * {
+  padding: 0 15px 10px 15px;
+}
+
+#project-main * {
+  padding: 5px;
+}
+
+.project-template {
+  background-size: cover;
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+}
+
+.project-template h3 {
+  font-size: 32px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+}
+
+.project-1 {
+  grid-column: 1 / 2;
+  border: 3px solid #f55800;
+  background-image: url("../../rsc/images/Img-Placeholder.png");
+}
+
+.project-1 div {
+  background-color: #f55800;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: -2px;
+  height: calc(15% + 2px);
+  width: calc(100% + 2px);
+  padding: 0;
+}
+
+.project-2 {
+  grid-column: 2 / 3;
+  background-image: url("../../rsc/images/Img-Placeholder_01.png");
+}
+
+.project-3 {
+  grid-column: 3 / 4;
+  background-image: url("../../rsc/images/Img-Placeholder_02.png");
+}
+
+.project-4 {
+  background-image: url("../../rsc/images/Img-Placeholder_03.png");
+}
+
+.project-5 {
+  background-image: url("../../rsc/images/Img-Placeholder_01.png");
+}
+
+.project-6 {
+  background-image: url("../../rsc/images/Img-Placeholder_02.png");
+}
+
+#projects-mobile {
+  display: none;
+  padding-bottom: 200px;
+  background-color: white;
+}
+
+#projects-title-mobile {
+  margin: 100px 0 0 0;
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#projects-title-mobile hr {
+  border-top: 1px solid #1c1a19;
+}
+
+#project-mobile-main {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#project-mobile-main img {
+  height: 237px;
+  width: 327px;
+}
+
+#project-mobile-main h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+}
+
+#project-mobile-main p {
+  margin-top: -10px;
+  line-height: 25px;
+}
+
+#project-mobile-main ul {
+  margin-left: -40px;
+}
+
+#project-mobile-main li {
+  display: inline;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.project-mobile-template {
+  background-image: url("../../rsc/images/Img-Placeholder_03.png");
+  background-size: cover;
+  height: 386px;
+  width: 327px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  color: white;
+}
+
+.project-mobile-template h3 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+}
+
+.project-mobile-template div {
+  background-color: #f55800;
+  align-self: center;
+  margin-bottom: -50px;
+  height: 15%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
 
 #headline {
   /*
@@ -161,6 +527,7 @@ header li {
 @media only screen and (max-width: 600px) {
   header {
     padding: 0 24px;
+    border: none;
   }
 
   header nav {
@@ -208,5 +575,75 @@ header li {
   #headline-content p {
     font-size: 16px;
     width: 300px;
+  }
+
+  #projects {
+    display: none;
+  }
+
+  #projects-mobile {
+    display: grid;
+    grid-template-columns: 0.8fr;
+    width: 100%;
+    justify-content: center;
+    grid-row-gap: 80px;
+    padding-top: 40px;
+  }
+
+  #skills {
+    height: 1901px;
+    width: 100%;
+    background-image: url("../../rsc/images/illustration-about.png");
+    background-repeat: no-repeat;
+    background-position: right -180px top 340px;
+    background-attachment: local;
+    background-size: 300px;
+    color: white;
+  }
+
+  #about {
+    width: 80%;
+    margin-left: 30px;
+    height: 540px;
+    gap: 20px;
+  }
+
+  #about h2 {
+    margin-top: 130px;
+    font-size: 72px;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    color: #ff6b00;
+  }
+
+  #about p {
+    width: 332px;
+    margin: -50px 0 50px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #skills hr {
+    width: 80vw;
+    margin-left: 10vw;
+    border: none;
+    border-top: 1px solid white;
+  }
+
+  #skill-list {
+    width: 320px;
+    margin: 40px 0 0 0;
+    grid-template-columns: 0.8fr;
+  }
+
+  #skill-list ul {
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  #skill-list li {
+    width: calc(100% + 30px);
   }
 }
