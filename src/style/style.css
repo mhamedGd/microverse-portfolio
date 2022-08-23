@@ -3,7 +3,7 @@
 }
 
 html {
-  max-width: 100%;
+  min-width: 100%;
   overflow-x: hidden;
 }
 
@@ -219,14 +219,27 @@ header li {
   font-size: 32px;
 }
 
+footer img {
+  filter: brightness(0.3);
+}
+
 #skill-list img {
   margin: 0 10px 2px 0;
+}
+
+footer ul {
+  margin-left: -25px;
 }
 
 #skill-list ul {
   font-weight: 400;
   font-size: 22px;
   list-style: none;
+}
+
+footer li {
+  display: inline;
+  padding: 10px 15px;
 }
 
 .project-mobile-template li {
@@ -524,6 +537,81 @@ header li {
   width: 400px;
 }
 
+.contact-form-container {
+  height: 844px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  background-color: white;
+  text-align: center;
+}
+
+.contact-form-text {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.contact-form-text h3 {
+  width: 350px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 0.8fr;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.contact-form-inputs {
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid #979493;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#contact-form-user-message {
+  border: none;
+  background-color: #fbf8f7;
+  height: 114px;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-form-button input {
+  background-color: #f55800;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.contact-form-button input:hover {
+  background-color: white;
+  border: 3px solid #f55800;
+  color: #f55800;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  padding: 10px auto 20px auto;
+  background-color: white;
+  border-top: 1px solid #8993a4;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     padding: 0 24px;
@@ -592,7 +680,8 @@ header li {
 
   #skills {
     height: 1901px;
-    width: 100%;
+    min-width: 80vw;
+    max-width: 100vw;
     background-image: url("../../rsc/images/illustration-about.png");
     background-repeat: no-repeat;
     background-position: right -180px top 340px;
@@ -609,7 +698,7 @@ header li {
   }
 
   #about h2 {
-    margin-top: 130px;
+    margin-top: 60px;
     font-size: 72px;
     font-family: 'Crete Round', serif;
     font-weight: 400;
