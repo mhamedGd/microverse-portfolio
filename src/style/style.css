@@ -219,14 +219,27 @@ header li {
   font-size: 32px;
 }
 
+footer img {
+  filter: brightness(0.3);
+}
+
 #skill-list img {
   margin: 0 10px 2px 0;
+}
+
+footer ul {
+  margin-left: -25px;
 }
 
 #skill-list ul {
   font-weight: 400;
   font-size: 22px;
   list-style: none;
+}
+
+footer li {
+  display: inline;
+  padding: 10px 15px;
 }
 
 .project-mobile-template li {
@@ -597,19 +610,6 @@ footer {
   padding: 10px auto 20px auto;
   background-color: white;
   border-top: 1px solid #8993a4;
-}
-
-footer ul {
-  margin-left: -25px;
-}
-
-footer li {
-  display: inline;
-  padding: 10px 15px;
-}
-
-footer img {
-  filter: brightness(0.3);
 }
 
 @media only screen and (max-width: 600px) {
