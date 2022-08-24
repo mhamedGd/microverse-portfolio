@@ -346,14 +346,14 @@ footer li {
   font-size: 17px;
   background: #f55800;
   color: white;
-  width: 320.5px;
+  width: 315.5px;
   height: 100%;
   line-height: 60px;
-  margin-left: -18px;
+  margin: 1px 0 0 -15.5px;
 }
 
 .project-template:hover {
-  border: 3px solid #f55800;
+  border: 3px solid #1c1a19;
   background-image: url("../../rsc/images/Img-Placeholder.png") !important;
 }
 
