@@ -4,6 +4,7 @@
 
 html {
   min-width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -149,7 +150,7 @@ header li {
 
 #skills {
   height: 1195px;
-  width: calc(100% + 15px);
+  width: 100%;
   background-image: url("../../rsc/images/illustration-about.png");
   background-repeat: no-repeat;
   background-position: right bottom 750px;
@@ -260,7 +261,7 @@ footer li {
 
 #projects {
   background-color: white;
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding-bottom: 100px;
   display: grid;
@@ -482,7 +483,7 @@ footer li {
   */
   background-image: url("../../rsc/images/Illustration-header.png");
   height: 640px;
-  width: 100vw;
+  width: auto;
   background-repeat: no-repeat;
   background-position: right;
   background-clip: border-box;
@@ -540,11 +541,11 @@ footer li {
 .contact-form-container {
   height: 844px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-content: stretch;
+  align-items: center;
   background-color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-form-text {
@@ -556,13 +557,18 @@ footer li {
   line-height: 44px;
 }
 
+.contact-form-div {
+  flex-basis: 600px;
+}
+
 .contact-form-text h3 {
-  width: 350px;
+  width: 455px;
+  height: 256px;
 }
 
 .contact-form {
   display: grid;
-  grid-template-columns: 0.8fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   row-gap: 20px;
 }
@@ -595,9 +601,11 @@ footer li {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
+  transition: 0.4s;
 }
 
 .contact-form-button input:hover {
+  cursor: pointer;
   background-color: white;
   border: 3px solid #f55800;
   color: #f55800;
@@ -734,5 +742,26 @@ footer {
 
   #skill-list li {
     width: calc(100% + 30px);
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .contact-form-div {
+    flex-basis: 400px;
+  }
+
+  .contact-form-text h3 {
+    width: 327px;
+    height: 256px;
+  }
+
+  .contact-form {
+    margin-top: 40px;
+    grid-template-columns: 0.75fr;
   }
 }
