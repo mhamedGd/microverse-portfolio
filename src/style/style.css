@@ -330,7 +330,7 @@ footer li {
   justify-content: flex-end;
   align-items: flex-start;
   color: white;
-  transition: 0s;
+  transition: 0.3s;
 }
 
 .project-template-show {
