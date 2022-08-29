@@ -13,9 +13,7 @@
 
 - Lighthouse, Stylelint, and Webhint (local html&css lint solutions)
 
-## Live Demo
-
-- https://mhamedgd.github.io/microverse-portfolio/
+[live demo]( https://mhamedgd.github.io/microverse-portfolio/)
 
 ## Authors
 
