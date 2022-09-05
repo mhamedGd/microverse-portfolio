@@ -9,10 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
-  <script src="src/script/index.js" defer></script>
+  <script src="./src/script/script.js" defer></script>
   <title>Mohammed's Portfolio</title>
 </head>
-<body>
+<body> 
+  <div class="mobile-menu">
+    <button id="mobile-menu-close-button" onclick="ToggleClass()"><img src="./rsc/icons/Icon-Cancel.svg" alt=""></button>
+    <div class="menu-links">
+      <a onclick="ScrollTo('#projects-mobile', 'start')"><h2>Portfolio</h2></a>
+      <a onclick="ScrollTo('#skills', 'start')"><h2>About</h2></a>
+      <a onclick="ScrollTo('#contact-form-container', 'start')"><h2>Contact</h2></a>
+    </div>
+  </div> 
   <header>
     <div id="logo"><a href=""><b>Mohammed</b></a></div>
     <nav>
@@ -24,8 +32,8 @@
       </ul>
     </nav>
     <div id="menu-icon">
-      <img src="./rsc/icons/Icon-Menu.svg" alt="Menu Icon">      
-    </div>
+      <button id="mobile-menu-open-button" onclick="ToggleClass()"><img src="./rsc/icons/Icon-Menu.svg" alt="Menu Icon"></button>   
+    </div>    
   </header>
   <section id="headline">
     <ul>
@@ -313,7 +321,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact-form-container">
+  <section id="contact-form-container" class="contact-form-container">
     <div class="contact-form-text">
       <h3>
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
