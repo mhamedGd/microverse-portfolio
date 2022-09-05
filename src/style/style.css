@@ -34,6 +34,10 @@ a {
   color: white;
 }
 
+label {
+  display: none;
+}
+
 /*
 ---------------------------
 Nav Bar Related
@@ -87,6 +91,16 @@ header li {
 }
 
 #menu-icon {
+  display: none;
+}
+
+#menu-icon button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
   display: none;
 }
 
@@ -634,6 +648,51 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .open {
+    display: block;
+    position: fixed;
+    margin-left: 0;
+    background-color: #3c3a39;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 10;
+  }
+
+  .mobile-menu button {
+    margin: 15px 25px 0 0;
+    float: right;
+    padding-bottom: 34px;
+    background: none;
+    border: none;
+  }
+
+  .mobile-menu img {
+    filter: brightness(0) invert();
+  }
+
+  .menu-links {
+    clear: right;
+    display: grid;
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+
+  .menu-links a {
+    border-bottom: 1px solid #fff5e1;
+    cursor: pointer;
+  }
+
+  .menu-links h2 {
+    padding: 0 0 0 15px;
+    color: #fff5e1;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+  }
+
   header {
     padding: 0 24px;
     border: none;

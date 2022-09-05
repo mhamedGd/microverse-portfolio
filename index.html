@@ -9,10 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
-  <script src="src/script/index.js" defer></script>
-  <title>Portfolio</title>
+  <script src="./src/script/script.js" defer></script>
+  <title>Mohammed's Portfolio</title>
 </head>
-<body>
+<body> 
+  <div class="mobile-menu">
+    <button id="mobile-menu-close-button" onclick="ToggleClass()"><img src="./rsc/icons/Icon-Cancel.svg" alt=""></button>
+    <div class="menu-links">
+      <a onclick="ScrollTo('#projects-mobile', 'start')"><h2>Portfolio</h2></a>
+      <a onclick="ScrollTo('#skills', 'start')"><h2>About</h2></a>
+      <a onclick="ScrollTo('#contact-form-container', 'start')"><h2>Contact</h2></a>
+    </div>
+  </div> 
   <header>
     <div id="logo"><a href=""><b>Mohammed</b></a></div>
     <nav>
@@ -20,20 +28,20 @@
         <li><a href="">Portfolio</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="" id="mail"><img src="../rsc/icons/Icon-Mail.svg" alt=""></a></li>
+        <li><a href="" id="mail"><img src="./rsc/icons/Icon-Mail.svg"  alt="Contact Icon"></a></li>
       </ul>
     </nav>
     <div id="menu-icon">
-      <img src="../rsc/icons/Icon-Menu.svg" alt="">      
-    </div>
+      <button id="mobile-menu-open-button" onclick="ToggleClass()"><img src="./rsc/icons/Icon-Menu.svg" alt="Menu Icon"></button>   
+    </div>    
   </header>
   <section id="headline">
     <ul>
-      <li><a href="https://github.com/mhamedGd"><img src="../rsc/icons/Icon-GitHub.svg" alt=""></a></li>
-      <li><a href="https://www.linkedin.com/in/mohammed-k-b10450107/"><img src="../rsc/icons/Icon-Linkedin.svg" alt=""></a></li>
-      <li><a href=""><img src="../rsc/icons/Icon-Angelist.svg" alt=""></a></li>
-      <li><a href="https://twitter.com/mhamedKGD"><img src="../rsc/icons/Icon-Twitter.svg" alt=""></a></li>
-      <li><a href=""><img src="../rsc/icons/Icon-Medium.svg" alt=""></a></li>
+      <li><a href="https://github.com/mhamedGd"><img src="rsc/icons/Icon-GitHub.svg" alt="Portfolio Github Page"></a></li>
+      <li><a href="https://www.linkedin.com/in/mohammed-k-b10450107/"><img src="rsc/icons/Icon-Linkedin.svg" alt="Portfolio Linkedin Page"></a></li>
+      <li><a href=""><img src="rsc/icons/Icon-Angelist.svg" alt="Portfolio Angelist Page"></a></li>
+      <li><a href="https://twitter.com/mhamedKGD"><img src="rsc/icons/Icon-Twitter.svg" alt="Portfolio Twitter Page"></a></li>
+      <li><a href=""><img src="rsc/icons/Icon-Medium.svg" alt="Portfolio Medium Page"></a></li>
     </ul>    
       <div id="headline-content">
         <h1>
@@ -57,7 +65,7 @@
       <hr>
     </div>     
     <div id="project-main">
-      <img src="../rsc/images/Img-Placeholder-main.png" alt="">
+      <img src="rsc/images/Img-Placeholder-main.png" alt="Main Project Image">
       <div id="content-flexbox">
         <h2>Multi-Post Stories</h2>
         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. 
@@ -188,7 +196,7 @@
       <hr>
     </div>
     <div id="project-mobile-main">
-      <img src="../rsc/images/Img-Placeholder-main.png" alt="">
+      <img src="./rsc/images/Img-Placeholder-main.png" alt="Main Project Image">
       <h2>Multi-Post Stories</h2>
       <p>A daily selection of privately personalized reads; no accounts or sign-ups required. 
         has been the industry's standard dummy text ever since the 1500s, 
@@ -289,14 +297,14 @@
     <hr>
     <div id="skill-list">
       <ul>
-        <li><h2><img src="../rsc/icons/Rectangle-1.svg" alt=""> Language</h2></li>        
+        <li><h2><img src="./rsc/icons/Rectangle-1.svg" alt="Icon"> Language</h2></li>        
         <li>Javascript</li>
         <li>Ruby</li>
         <li>Html</li>
         <li>Css</li>
       </ul>
       <ul>
-        <li><h2><img src="../rsc/icons/Rectangle-2.svg" alt=""> Frameworks</h2>
+        <li><h2><img src="./rsc/icons/Rectangle-2.svg" alt="Icon"> Frameworks</h2>
         <li>Bootstrap</li>
         <li>Ruby on Rails</li>
         <li>RSPec</li>
@@ -304,7 +312,7 @@
         <li>Selenium</li>
       </ul>
       <ul>
-        <li><h2><img src="../rsc/icons/Rectangle-3.svg" alt=""> Skills</h2></li>
+        <li><h2><img src="./rsc/icons/Rectangle-3.svg" alt="Icon"> Skills</h2></li>
         <li>Codekit</li>
         <li>Github</li>
         <li>Codepen</li>
@@ -313,7 +321,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact-form-container">
+  <section id="contact-form-container" class="contact-form-container">
     <div class="contact-form-text">
       <h3>
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -321,20 +329,20 @@
     </div>
       <div class="contact-form-div">
       <form action="https://formspree.io/f/mpznwqjl" method="post" class="contact-form">
-        <input name="Full-Name" type="text" class="contact-form-inputs" maxlength="30" placeholder="full name" required>
-        <input name="Email" type="email" class="contact-form-inputs" required placeholder="e-mail">
-        <textarea name="Message" id="contact-form-user-message" required placeholder="Enter text here" maxlength="500"></textarea>
-        <div class="contact-form-button"><input type="submit" value="Get in touch"></div>
+        <label for="contact-form-fullname">Full-Name</label><input name="Full-Name" type="text" id="contact-form-fullname" class="contact-form-inputs" maxlength="30" placeholder="full name" required>
+        <label for="contact-form-email">Full-Name</label><input name="Email" type="email" id="contact-form-email" class="contact-form-inputs" required placeholder="e-mail">
+        <label for="contact-form-user-message">Full-Name</label><textarea name="Message" id="contact-form-user-message" required placeholder="Enter text here" maxlength="500"></textarea>
+        <div class="contact-form-button"><input aria-label="Submit" type="submit" value="Get in touch"></div>
       </form>
     </div>
   </section>
   <footer>
     <ul>
-      <li><a href="https://github.com/mhamedGd"><img src="../rsc/icons/Icon-GitHub.svg" alt=""></a></li>
-      <li><a href="https://www.linkedin.com/in/mohammed-k-b10450107/"><img src="../rsc/icons/Icon-Linkedin.svg" alt=""></a></li>
-      <li><a href=""><img src="../rsc/icons/Icon-Angelist.svg" alt=""></a></li>
-      <li><a href="https://twitter.com/mhamedKGD"><img src="../rsc/icons/Icon-Twitter.svg" alt=""></a></li>
-      <li><a href=""><img src="../rsc/icons/Icon-Medium.svg" alt=""></a></li>
+      <li><a href="https://github.com/mhamedGd"><img src="rsc/icons/Icon-GitHub.svg" alt="Portfolio Github Page"></a></li>
+      <li><a href="https://www.linkedin.com/in/mohammed-k-b10450107/"><img src="rsc/icons/Icon-Linkedin.svg" alt="Portfolio Linkedin Page"></a></li>
+      <li><a href=""><img src="rsc/icons/Icon-Angelist.svg" alt="Portfolio Angelist Page"></a></li>
+      <li><a href="https://twitter.com/mhamedKGD"><img src="rsc/icons/Icon-Twitter.svg" alt="Portfolio Twitter Page"></a></li>
+      <li><a href=""><img src="rsc/icons/Icon-Medium.svg" alt="Portfolio Medium Page"></a></li>
     </ul>
   </footer>
 </body>
