@@ -471,7 +471,7 @@ footer li {
 }
 
 .project-mobile-template {
-  background-image: url("../../rsc/images/Img-Placeholder_03.png");
+  /*background-image: url("../../rsc/images/Img-Placeholder_03.png");*/
   background-size: cover;
   height: 386px;
   width: 327px;
@@ -483,11 +483,24 @@ footer li {
   color: white;
 }
 
+.project-mobile-template * {
+  z-index: 1;
+}
+
+.project-mobile-template .project-background {
+  position: absolute;
+  width: 327px;
+  height: auto;
+  margin-left: -15px;
+  z-index: 0;
+}
+
 .project-mobile-template h3 {
   margin-bottom: 20px;
   font-size: 32px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
+  z-index: 1;
 }
 
 .project-mobile-template div {
