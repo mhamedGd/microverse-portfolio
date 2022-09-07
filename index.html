@@ -13,6 +13,54 @@
   <title>Mohammed's Portfolio</title>
 </head>
 <body> 
+  <div class="project-mobile-popup mobile-popup-close">
+    <div>
+      <button class="exit" onclick="TogglePopup()"><img src="./rsc/icons/Icon-Cancel.svg" alt=""></button>
+      <h2>Project</h2>
+      <ul id="technologies-mobile">
+        <li>html</li>
+        <li>Bootstrap</li>
+        <li>Ruby on rails</li>
+      </ul>
+      <img src="./rsc/images/Snapshoot-Portfolio.png" alt="">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essent
+      </p>
+      <ul id="buttons-mobile">
+        <li><a href="">See Live <img src="./rsc/icons/Icon-Source.svg" alt=""></a></li>
+        <li><a href="">See Source <img src="./rsc/icons/Icon-GitHub.svg" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="project-desktop-popup desktop-popup-open">
+    <div class="desktop-popup-main-div">
+      <button class="exit" onclick="TogglePopupDesktop()"><img src="./rsc/icons/Icon-Cancel.svg" alt=""></button>
+      <h2>Project</h2>
+      <ul id="technologies-desktop">
+        <li>html</li>
+        <li>Bootstrap</li>
+        <li>Ruby on rails</li>
+      </ul>
+      <div class="desktop-popup-image-div">
+          <img class="desktop-popup-image" src="./rsc/images/Snapshoot-Portfolio-Desktop.png" alt="">
+          <div class="desktop-popup-paragraph-div">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+              releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+              releax map lapora verita.
+            </p>
+            <ul id="buttons-desktop">
+              <li><a href="">See Live <img src="./rsc/icons/Icon-Source.svg" alt=""></a></li>
+              <li><a href="">See Source <img src="./rsc/icons/Icon-GitHub.svg" alt=""></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
   <div class="mobile-menu">
     <button id="mobile-menu-close-button" onclick="ToggleClass()"><img src="./rsc/icons/Icon-Cancel.svg" alt=""></button>
     <div class="menu-links">
@@ -78,119 +126,11 @@
           <li>bootstrap</li>
           <li>Ruby</li>
         </ul>
-        <div class="see-project"><a href="">See Project</a></div>
+        <div class="see-project"><a onclick="TogglePopupDesktop()">See Project</a></div>
       </div>
-    </div>
-    <div class="project-1">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-    <div class="project-2">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-    <div class="project-3">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-    <div class="project-4">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-    <div class="project-5">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-    <div class="project-6">
-      <a href="" class="project-template">
-        <div class="project-template-hide">
-          <h3>Data Dashboard Healthcare</h3>
-          <p>A daily selection of privately personalized reads;
-            no accounts or sign-ups required. has been the industry's standard
-          </p>
-          <ul>
-            <li>html</li>
-            <li>bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="project-template-show">
-          <h4>See Project</h4>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section id="projects-mobile">
+    </div>    
+  </section>  
+  <section id="projects-mobile">    
     <div id="projects-title-mobile">
       <h2>My Recent Works</h2>
       <hr>
@@ -208,79 +148,7 @@
         <li>bootstrap</li>
         <li>Ruby</li>
       </ul>
-      <div class="see-project"><a href="">See Project</a></div>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
-    </div>
-    <div class="project-mobile-template">
-      <h3>Professional Art Printing Data</h3>
-      <p>A daily selection of privately personalized reads; 
-        no accounts or sign-ups required. has been the industry's standard
-      </p>
-      <ul>
-        <li>html</li>
-        <li>bootstrap</li>
-        <li>Ruby</li>
-      </ul>
-      <a href="">See Project</a>
+      <div class="see-project"><a onclick="TogglePopup()">See Project</a></div>
     </div>
   </section>
   <section id="skills">
