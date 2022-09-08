@@ -788,6 +788,21 @@ footer li {
   line-height: 24px;
 }
 
+.contact-form-inputs.invalid {
+  border: 2px solid red;
+}
+
+.contact-form-button small.hide {
+  display: none;
+}
+
+.contact-form-button small {
+  display: inline;
+  color: red;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
 #contact-form-user-message {
   border: none;
   background-color: #fbf8f7;
@@ -1013,5 +1028,10 @@ footer {
   .contact-form {
     margin-top: 40px;
     grid-template-columns: 0.75fr;
+  }
+
+  .contact-form-button small {
+    padding-top: 10px;
+    display: block;
   }
 }

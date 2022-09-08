@@ -165,3 +165,33 @@ for (let i = 0; i < 6; i += 1) {
   CreateProjectMobile(PROJECT_DETAILS_COLLECTION[i]);
   CreateProjectDesktop(PROJECT_DETAILS_COLLECTION[i]);
 }
+
+function CheckUppercase(value) {
+  const tester = /[A-Z]/;
+  if (!tester.test(value)) {
+    console.log('FALSE');
+    return false;
+  }
+  console.log('TRUE');
+  return true;
+}
+
+const CONTACT_FORM = document.querySelector('form');
+const EMAIL_INPUT = CONTACT_FORM.querySelector('#contact-form-email');
+const INVALID_MESSAGE = document.querySelector('.contact-form-button small');
+
+function ValidateEmail() {
+  const EMAIL_VALUE = EMAIL_INPUT.value;
+  const ORIGINAL_BORDER = EMAIL_INPUT.style.border;
+  const CHECK_UPPERCASE = CheckUppercase(EMAIL_VALUE);
+  if (!CHECK_UPPERCASE) {
+    EMAIL_INPUT.classList.remove('invalid');
+    INVALID_MESSAGE.classList.add('hide');
+    return;
+  }
+
+  INVALID_MESSAGE.classList.remove('hide');
+  EMAIL_INPUT.classList.add('invalid');
+}
+
+EMAIL_INPUT.addEventListener('change', ValidateEmail);
