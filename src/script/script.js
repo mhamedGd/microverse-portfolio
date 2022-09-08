@@ -169,10 +169,8 @@ for (let i = 0; i < 6; i += 1) {
 function CheckUppercase(value) {
   const tester = /[A-Z]/;
   if (!tester.test(value)) {
-    console.log('FALSE');
     return false;
   }
-  console.log('TRUE');
   return true;
 }
 
