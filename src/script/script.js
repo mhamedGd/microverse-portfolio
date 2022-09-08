@@ -178,7 +178,7 @@ const CONTACT_FORM = document.querySelector('form');
 const EMAIL_INPUT = CONTACT_FORM.querySelector('#contact-form-email');
 const INVALID_MESSAGE = document.querySelector('.contact-form-button small');
 
-function ValidateEmail() {
+function ValidateEmail(event) {
   const EMAIL_VALUE = EMAIL_INPUT.value;
   const ORIGINAL_BORDER = EMAIL_INPUT.style.border;
   const CHECK_UPPERCASE = CheckUppercase(EMAIL_VALUE);
@@ -187,9 +187,10 @@ function ValidateEmail() {
     INVALID_MESSAGE.classList.add('hide');
     return;
   }
-
+  event.preventDefault();
   INVALID_MESSAGE.classList.remove('hide');
   EMAIL_INPUT.classList.add('invalid');
 }
 
 EMAIL_INPUT.addEventListener('change', ValidateEmail);
+CONTACT_FORM.addEventListener('submit', ValidateEmail);
